@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <title>Salvador de URL</title>
+</head>
+<body>
+    <h1>Microsserviço de encurtador de URL</h1>
+    <h2>Criador de URL curta</h2>
+    <p>Bote a URL escolhida logo abaixo</p>
+    <form id="url" action="api/shorturl" method="POST">
+        URL: <input id="url_input" name="url" type="text" placeholder="https://www.freecodecamp.org/" />
+        <input id="url_button" type="submit" value="Postar URL"/>
+    </form>
+    <h2>Exemplo para usar:</h2>
+    <a href="api/shorturl/2">[this_project_url]/api/shorturl/2</a>
+    <h2>Irá redirecinalo para:</h2>
+    <a href="https://samuel-schlemper-schlemuel.github.io/Curriculo/Principal.html">
+        https://samuel-schlemper-schlemuel.github.io/Curriculo/Principal.html
+    </a>
+</body>
+</html>

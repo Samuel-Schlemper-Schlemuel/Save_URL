@@ -1,0 +1,19 @@
+{
+    "name": "url_saver",
+    "version": "0.0.0",
+    "description": "A FCC project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.18.1",
+        "mongoose": "^6.6.2",
+        "dotenv": "^16.0.3",
+        "dns": "^0.2.2",
+        "url": "^0.11.0",
+        "open": "^8.4.0"
+    },
+    "license": "MIT",
+    "author": "Samuel Schlemper"
+}
