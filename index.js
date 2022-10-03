@@ -6,7 +6,6 @@ const express = require('express')
 const mongoose  = require('mongoose')
 const dns = require('dns')
 const url = require('url')
-const open = require('open')
 const app = express()
 const PORT = process.env.PORT || 3000
 const URI = process.env.MONGO_URI
