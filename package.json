@@ -4,7 +4,7 @@
     "description": "A FCC project",
     "main": "index.js",
     "engines": {
-        "node": "0.8.x"
+        "node": "14.20.0"
     },
     "scripts": {
         "start": "node index.js"
