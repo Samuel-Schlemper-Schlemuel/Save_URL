@@ -134,4 +134,4 @@ app.get('/api/shorturl/:id', async (req, res) => {
     res.redirect(url)
 })
 
-app.listen(PORT)
+app.listen(PORT, , () => {console.log(`Server is running in the port ${PORT}`)})
