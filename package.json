@@ -7,23 +7,22 @@
         "node": ">=14.x"
     },
     "scripts": {
-        "start": "node index.js",
-        "build": "webpack --env production --env VERCEL_ENV=$VERCEL_ENV"
+        "start": "node index.js"
     },
     "dependencies": {
+        "dns": "^0.2.2",
+        "dotenv": "^16.0.3",
         "express": "^4.18.1",
         "mongoose": "^6.6.2",
-        "dotenv": "^16.0.3",
-        "dns": "^0.2.2",
-        "url": "^0.11.0",
-        "open": "^8.4.0"
+        "open": "^8.4.0",
+        "url": "^0.11.0"
     },
     "keywords": [
-		"node",
-		"express",
-		"freecodecamp",
+        "node",
+        "express",
+        "freecodecamp",
         "mongoose"
-	],
+    ],
     "license": "MIT",
     "author": "Samuel Schlemper"
 }
