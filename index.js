@@ -1,5 +1,7 @@
 // Adding .env variables
-require('dotenv').config()
+// require('dotenv').config()
+
+const MONGO_URI = 'mongodb+srv://Schlemuel:Doquinha.0428@cluster0.gucv5ni.mongodb.net/?retryWrites=true&w=majority'
 
 // Making many consts
 const express = require('express')
@@ -8,7 +10,8 @@ const dns = require('dns')
 const url = require('url')
 const app = express()
 const PORT = process.env.PORT || 3000
-const URI = process.env.MONGO_URI
+// const URI = process.env.MONGO_URI
+const URI = MONGO_URI;
 const { Schema } = mongoose
 
 //Working with the mongoose
@@ -134,4 +137,4 @@ app.get('/api/shorturl/:id', async (req, res) => {
     res.redirect(url)
 })
 
-app.listen(PORT, () => {console.log(`Server is running in the port ${PORT}`)})
+app.listen(PORT)
