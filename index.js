@@ -4,7 +4,7 @@ require('dotenv').config()
 // Making many consts
 const express = require('express')
 const mongoose  = require('mongoose')
-const dns = require('dns')
+const lookup = require('dns-lookup')
 const url = require('url')
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -77,7 +77,7 @@ async function checkUrl(testeUrl){
     }
 
     const resul =  new Promise((resolve) => {
-        dns.lookup(host, (error, ip, family) => {
+        lookup(host, (error, ip, family) => {
             if(error){
                 resolve('invalid hostname')
             } else {
